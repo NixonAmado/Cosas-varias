@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.nav__responsive-ul{
+    display: none;
+}
+
+.nav{ 
+     background: linear-gradient(0deg, rgba(195,192,34,1) 12%,
+
+         rgba(157,155,28,1) 27%,
+         rgba(123,121,23,1) 43%,
+         rgba(104,103,20,1) 58%,
+         rgba(65,64,14,1) 78%,
+         rgba(97,96,19,1) 87%,
+         rgba(4,4,4,0) 98%);
+
+}
+
+.nav__li{
+    display: inline-block;
+    padding: 12px;
+    color: #ffffffff;
+   
+
+}
+
+.nav__li a {
+    text-decoration: none;
+    color : #ffc;
+    padding-left: 3px;
+
+}
+
+.nav__li:hover a{
+    color: #bbb;
+
+}
+
+.nav__li:hover i{
+    color: #bbb;
+
+}
+
+.nav__li i {
+    box-sizing: border-box;
+    text-align: right;
+    margin: 5px;
+
+}
+
+.nav__resposive-button-container{
+   
+    position: absolute;
+    width: 100%;
+    font-size: 25px;
+    color:#fff;
+    background: linear-gradient(0deg, rgba(195,192,34,1) 12%,
+
+    rgba(157,155,28,1) 27%,
+    rgba(123,121,23,1) 43%,
+    rgba(104,103,20,1) 58%,
+    rgba(65,64,14,1) 78%,
+    rgba(97,96,19,1) 87%,
+    rgba(4,4,4,0) 98%);
+    z-index: 100;
+    margin-top: -66px;
+}
+
+
+.nav__responsive-button{
+    padding: 6px 20px;
+    text-align: right;
+    width: 100%;
+    }
+
+@media only screen and (max-width:540px) {
+    .nav__ul{
+        display: none;
+    }
+
+    .nav{
+        height: 20px;
+        width: 100%;
+       
+    }
+
+    .nav__responsive-ul{
+        display: block;
+        position:absolute;
+        width: 100%;
+        margin-top:37px;
+        padding-top: 27px;
+        height: 37px;
+    }
+
+    .nav__li-container{
+        position: relative;
+        top: -1000px;
+        width: 75%;
+        height: calc(100vh - 37px);
+        padding: 27px;
+        transition: all 1s;
+        background:  rgb(209, 206, 42) ;
+      
+    }
+    .nav__responsive-li {
+        width: 100%;
+        padding:9px 20px;
+    }
+
+    .nav__li-container a {
+        text-decoration: none;
+        color: rgb(105, 64, 5);
+        
+    }
+
+    .nav__responsive-li i {
+        box-sizing: border-box;
+        text-align: center;
+        margin-right: 5px;
+        color: #fff;
+        width: 30px;
+    }
+
+    .nav__responsive-ul:hover > .nav__li-container{
+        top: -27px;
+
+    }
+}
+
